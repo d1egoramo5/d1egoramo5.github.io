@@ -270,3 +270,34 @@ nav a.active.btn{
   color:inherit;
   display:block;
 }
+
+/* project icon container (square) */
+.project-icon{
+  position:relative;
+  width:36px;
+  height:36px;
+  margin:0 auto .75rem;
+}
+
+/* both images (default + hover) fill the box but keep their aspect ratio */
+.project-icon .icon{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:contain;    /* preserve original aspect ratio (no squish) */
+  transition:opacity .18s ease, transform .18s ease;
+  display:block;
+}
+
+/* stacking: default visible, hover hidden until mouseover */
+.project-icon .icon-default{ opacity:1; }
+.project-icon .icon-hover{ opacity:0; transform:scale(1); }
+
+/* swap on card hover */
+.project:hover .icon-default{ opacity:0; transform:scale(.98); }
+.project:hover .icon-hover{ opacity:1; transform:scale(1.02); }
+
+.section-subtitle{
+  margin:2.5rem 0 1.5rem;
+}

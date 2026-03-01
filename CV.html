@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Diego Ramos Aguilera — CV</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="index.html" class="brand-link">
+      <div class="brand">
+        <div class="logo">—DRA.</div>
+        <div class="name">
+          <div style="font-weight:500"><strong>Diego</strong> Ramos Aguilera</div>
+          <div style="font-size:.85rem;color:var(--muted)">Engineer • Researcher • Data scientist</div>
+        </div>
+      </div></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="work.html">My work</a>
+        <a href="interests.html">Other interests</a>
+        <a href="CV.html" class="active">CV</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <!-- LEFT PANEL: CV viewer -->
+      <div class="card intro" style="padding:0; overflow:hidden; display:flex; flex-direction:column;">
+        <!-- header bar inside card (optional) -->
+        <div style="padding:0.9rem 1.25rem; border-bottom:1px solid rgba(255,255,255,0.03); background:transparent; display:flex; align-items:center; justify-content:space-between;">
+          <div style="font-weight:700">My Curriculum Vitae <i>(updated March 2026)</i></div>
+          <div style="color:var(--muted); font-size:.95rem">
+            <a href="contents/CV.pdf" download style="color:var(--accent); text-decoration:none;">Download PDF</a>
+          </div>
+        </div>
+
+        <!-- PDF embed: object with fallback link -->
+        <div style="flex:1; min-height:700px; background:transparent; display:block;">
+          <object
+            data="contents/CV.pdf"
+            type="application/pdf"
+            width="100%"
+            height="100%"
+            aria-label="Curriculum Vitae — PDF viewer"
+            style="min-height:700px; border:0;">
+            <!-- Fallback for browsers that block embedded PDFs -->
+            <div style="padding:1.25rem;">
+              <p class="muted">Your browser does not support embedded PDFs. You can <a href="contents/CV.pdf" style="color:var(--accent)">download the CV here</a>.</p>
+            </div>
+          </object>
+        </div>
+      </div>
+
+      <!-- RIGHT PANEL: contact aside -->
+      <aside class="card contact" id="contact">
+        <div class="avatar" aria-hidden="true">
+          <img src="images/me-800.jpg" alt="" class="avatar-img" loading="lazy" width="400" height="400">
+        </div>
+
+        <h3 style="margin-top:0">Let’s connect!</h3>
+        <p class="muted"><a href="mailto:diegoramos@gmx.es" style="color:var(--accent)">diegoramos@gmx.es</a> | <a href="mailto:ramosagu@usc.edu" style="color:var(--accent)">ramosagu@usc.edu</a></p>
+
+        <div class="socials" aria-label="Social links">
+          <a href="https://www.instagram.com/d1egoramo5" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="images/icons/instagram.png" alt="" class="social-icon" width="20" height="20">
+          </a>
+          <a href="https://bsky.app/profile/d1egoramo5.bsky.social" target="_blank" rel="noopener" aria-label="Bluesky">
+            <img src="images/icons/bluesky.png" alt="" class="social-icon" width="20" height="20">
+          </a>
+          <a href="https://www.linkedin.com/in/d1egoramo5" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img src="images/icons/linkedin.png" alt="" class="social-icon" width="20" height="20">
+          </a>
+          <a href="https://github.com/d1egoramo5" target="_blank" rel="noopener" aria-label="GitHub">
+            <img src="images/icons/github.png" alt="" class="social-icon" width="20" height="20">
+          </a>
+          <a href="https://orcid.org/0000-0003-2019-0027" target="_blank" rel="noopener" aria-label="ORCID">
+            <img src="images/icons/orcid.png" alt="" class="social-icon" width="20" height="20">
+          </a>
+          <a href="https://scholar.google.com/citations?user=gKFUmbkAAAAJ&hl" target="_blank" rel="noopener" aria-label="Google Scholar">
+            <img src="images/icons/scholar.png" alt="" class="social-icon" width="20" height="20">
+          </a>
+        </div>
+
+        <a class="btn" href="contact.html" style="display:inline-block;margin-top:.5rem">Say hello</a>
+      </aside>
+    </section>
+
+    <footer class="footer-bar">
+      © <span id="year"></span> Diego Ramos Aguilera — Built with HTML &amp; CSS
+    </footer>
+  </div>
+
+  <script>
+    // set year in footer
+    document.getElementById('year')?.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

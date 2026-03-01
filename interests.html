@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Diego Ramos Aguilera — Other interests</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a href="index.html" class="brand-link">
+      <div class="brand">
+        <div class="logo">—DRA.</div>
+        <div class="name">
+          <div style="font-weight:500"><strong>Diego</strong> Ramos Aguilera</div>
+          <div style="font-size:.85rem;color:var(--muted)">Engineer • Researcher • Data scientist</div>
+        </div>
+      </div></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="work.html">My work</a>
+        <a href="interests.html" class="active">Other interests</a>
+        <a href="CV.html">CV</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <!-- LEFT PANEL: simple title + paragraph -->
+      <div class="card intro">
+        <div style="display:flex;justify-content:space-between;align-items:start">
+          <div>
+            <h1><strong>Other</strong> interests</h1>
+            <p class="muted">A short place-holder paragraph. You can add a figure or gallery here later.</p>
+            <p>Sample paragraph: I enjoy exploring cross-disciplinary topics connecting urban design, energy transitions, and public health. I also tinker with small sensor projects and data visualizations in my free time.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT PANEL: contact aside (same as index) -->
+      <aside class="card contact" id="contact">
+        <div class="avatar" aria-hidden="true">
+          <img src="images/me-800.jpg" alt="" class="avatar-img" loading="lazy" width="400" height="400">
+        </div>
+
+        <h3 style="margin-top:0">Let’s connect!</h3>
+        <p class="muted"><a href="mailto:diegoramos@gmx.es" style="color:var(--accent)">diegoramos@gmx.es</a> | <a href="mailto:ramosagu@usc.edu" style="color:var(--accent)">ramosagu@usc.edu</a></p>
+
+        <div class="socials" aria-label="Social links">
+          <a href="https://www.instagram.com/d1egoramo5" target="_blank" rel="noopener" aria-label="Instagram">
+            <img src="images/icons/instagram.png" alt="" class="social-icon" width="20" height="20">
+          </a>
+          <a href="https://bsky.app/profile/d1egoramo5.bsky.social" target="_blank" rel="noopener" aria-label="Bluesky">
+            <img src="images/icons/bluesky.png" alt="" class="social-icon" width="20" height="20">
+          </a>
+          <a href="https://www.linkedin.com/in/d1egoramo5" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <img src="images/icons/linkedin.png" alt="" class="social-icon" width="20" height="20">
+          </a>
+          <a href="https://github.com/d1egoramo5" target="_blank" rel="noopener" aria-label="GitHub">
+            <img src="images/icons/github.png" alt="" class="social-icon" width="20" height="20">
+          </a>
+          <a href="https://orcid.org/0000-0003-2019-0027" target="_blank" rel="noopener" aria-label="ORCID">
+            <img src="images/icons/orcid.png" alt="" class="social-icon" width="20" height="20">
+          </a>
+          <a href="https://scholar.google.com/citations?user=gKFUmbkAAAAJ&hl" target="_blank" rel="noopener" aria-label="Google Scholar">
+            <img src="images/icons/scholar.png" alt="" class="social-icon" width="20" height="20">
+          </a>
+        </div>
+
+        <a class="btn" href="contact.html" style="display:inline-block;margin-top:.5rem">Say hello</a>
+      </aside>
+    </section>
+
+    <footer class="footer-bar">
+      © <span id="year"></span> Diego Ramos Aguilera — Other interests
+    </footer>
+  </div>
+
+<script>document.getElementById('year')?.textContent = new Date().getFullYear();</script>
+</body>
+</html>

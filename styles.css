@@ -301,3 +301,12 @@ nav a.active.btn{
 .section-subtitle{
   margin:2.5rem 0 1.5rem;
 }
+
+/* Subtitle: smaller, slightly lighter secondary text for headings/subtitles */
+.subtitle {
+  color: var(--muted, #6b7280);
+  font-size: 0.9rem;    /* smaller than body text */
+  line-height: 1.35;
+  font-weight: 400;
+  /* keep it inline by default so it works on spans; change to display:block if needed */
+}

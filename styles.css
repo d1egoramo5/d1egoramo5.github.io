@@ -141,7 +141,7 @@ body{
   footer{margin-top:2rem; color:var(--muted); font-size:.9rem; text-align:center}
 
   .footer-bar{
-  margin-top:2rem;
+  margin-top:0;
   width:100vw;                 /* full width */
   margin-left:calc(50% - 50vw); /* break out of centered wrapper */
   background:#000;
@@ -151,6 +151,19 @@ body{
   border-radius:0;             /* remove bubble rounding */
   box-shadow:none;
   border:none;
+}
+
+  .page-banner{
+  margin-top:2rem;
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  overflow:hidden;
+}
+
+  .page-banner img{
+  display:block;
+  width:100%;
+  height:auto;
 }
 
   /* responsive */
